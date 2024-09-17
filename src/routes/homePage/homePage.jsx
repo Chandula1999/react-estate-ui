@@ -7,7 +7,7 @@ function HomePage() {
       <div className="textContainer">
         <div className="wrapper">
           <div className="title">
-            <h1>Find Real State and Find Build Dream Place</h1>
+            <h1>Find Real State & Build Dream Place</h1>
           </div>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
@@ -17,16 +17,18 @@ function HomePage() {
           </p>
           <SearchBar />
           <div className="boxes">
-            <h1>16+</h1>
-            <h2>Years Of Experience</h2>
-          </div>
-          <div className="boxes">
-            <h1>200</h1>
-            <h2>Award Gained</h2>
-          </div>
-          <div className="boxes">
-            <h1>2000+</h1>
-            <h2>Properties</h2>
+            <div className="box">
+              <h1>16+</h1>
+              <h2>Years Of Experience</h2>
+            </div>
+            <div className="box">
+              <h1>200</h1>
+              <h2>Award Gained</h2>
+            </div>
+            <div className="box">
+              <h1>2000+</h1>
+              <h2>Properties</h2>
+            </div>
           </div>
         </div>
       </div>
