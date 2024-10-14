@@ -1,16 +1,17 @@
-import { Link } from "react-router-dom";
+import { useState } from "react";
 import "./navbar.scss";
-import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
-  const user = true;
+
+  const user = false;
   return (
     <nav>
       <div className="left">
         <a href="/" className="logo">
-          <img src="/logo.png" alt="LOGO" />
-          <span>RealState</span>
+          <img src="/logo.png" alt="" />
+          <span>LamaEstate</span>
         </a>
         <a href="/">Home</a>
         <a href="/">About</a>
@@ -32,16 +33,19 @@ function Navbar() {
           </div>
         ) : (
           <>
-            <a href="/">Sign in</a>
-            <a href="/" className="register">
-              Sign up
-            </a>
+            <Link to="/login">
+              <span>Log In</span>
+            </Link>
+
+            <Link to="/register" className="register">
+              <span>Sign Up</span>
+            </Link>
           </>
         )}
         <div className="menuIcon">
           <img
             src="/menu.png"
-            alt="Menu"
+            alt=""
             onClick={() => setOpen((prev) => !prev)}
           />
         </div>
@@ -50,11 +54,12 @@ function Navbar() {
           <a href="/">About</a>
           <a href="/">Contact</a>
           <a href="/">Agents</a>
-          <a href="/">Sign In</a>
-          <a href="/">Sign Up</a>
+          <a href="/">Sign in</a>
+          <a href="/">Sign up</a>
         </div>
       </div>
     </nav>
   );
 }
+
 export default Navbar;
