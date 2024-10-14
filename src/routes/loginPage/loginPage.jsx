@@ -1,7 +1,7 @@
-import "./login.scss";
+import "./loginPage.scss";
 import { Link } from "react-router-dom";
 
-function Login() {
+function loginPage() {
   return (
     <div className="login">
       <div className="formContainer">
@@ -20,4 +20,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default loginPage;
